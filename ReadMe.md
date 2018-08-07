@@ -4,6 +4,13 @@
 
 
 
+| Platform | Status                                                       |
+| -------- | ------------------------------------------------------------ |
+| Android  | [![Build status](https://build.appcenter.ms/v0.1/apps/5a46c922-81c0-4ce4-9d4d-d33c52a04dc2/branches/master/badge)](https://appcenter.ms) |
+| iOS      | [![Build status](https://build.appcenter.ms/v0.1/apps/93ceb8a6-eb7f-4742-a6a0-80bf9d639ba4/branches/master/badge)](https://appcenter.ms) |
+
+
+
 ###### Roadmap
 
 * Map based on IP location
