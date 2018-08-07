@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:i18n="using:FindMyIP.i18n" 
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core" 
+             Title="{Binding Title}" 
+             x:Class="FindMyIP.Views.SplashScreenPage">
+
+    <ScrollView Padding="0,40,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0,0,0">
+            <Label Text="$" Margin="0,0,10,0" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="i" TextColor="White" IsVisible="{Binding IVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="p" Margin="0,0,10,0" TextColor="White" IsVisible="{Binding PVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="a" TextColor="White" IsVisible="{Binding AVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="d" TextColor="White" IsVisible="{Binding D1Visibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="d" TextColor="White" IsVisible="{Binding D2Visibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="r" Margin="0,0,10,0" TextColor="White" IsVisible="{Binding RVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="s" TextColor="White" IsVisible="{Binding SVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="h" TextColor="White" IsVisible="{Binding HVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="o" TextColor="White" IsVisible="{Binding OVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            <Label Text="w" TextColor="White" IsVisible="{Binding WVisibility}" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+        </StackLayout>
+    </ScrollView>
+
+        <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="135">
+            <xfg:GradientStep StepColor="#000000" StepPercentage="0"/>
+            <xfg:GradientStep StepColor="#212121" StepPercentage="1"/>
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    
+</ContentPage>
