@@ -1,10 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="1"
-          android:versionName="1.0"
-          package="no.bluewhale.findmyip">
-    <uses-sdk android:minSdkVersion="23" />
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="no.bluewhale.ipaddr">
+    <uses-sdk android:minSdkVersion="18" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <application android:label="FindMyIP">
-    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application android:label="ip addr" android:icon="@drawable/icon"></application>
 </manifest>
