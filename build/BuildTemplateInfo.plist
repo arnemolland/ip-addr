@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Find My IP</string>
+	<string>ip addr</string>
 	<key>CFBundleIdentifier</key>
 	<string>no.bluewhale.ipaddr</string>
 	<key>CFBundleShortVersionString</key>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms" 
+             xmlns:i18n="clr-namespace:ipaddr.i18n;assembly=ipaddr" 
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="{Binding Title}" 
+             x:Class="ipaddr.Views.MainPage">
+
+    <ScrollView Padding="0,40,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0,0,150" x:Name="Title">
+                <Label Text="$" Margin="0,0,10,0" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="i" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="p" Margin="0,0,10,0" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="a" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="d" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="d" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="r" Margin="0,0,10,0" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="s" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="h" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="o" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+                <Label Text="w" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand">
+                <Label Text="$ public"
+                       TextColor="#6ae5ff"
+                       Opacity="1"
+                       FontSize="36"
+                       FontFamily="{StaticResource NormalFont}"
+                       HorizontalOptions="Start"/>
+                
+                <Label Text="{Binding PublicIp}"
+                       TextColor="White"
+                       FontSize="42"
+                       FontFamily="{StaticResource BoldFont}"/>
+                
+                <Label Text="$ local"
+                       Opacity="1"
+                       TextColor="#6ae5ff"
+                       FontSize="36"
+                       FontFamily="{StaticResource NormalFont}"/>
+                
+                <Label Text="{Binding LocalIp}"
+                       TextColor="White"
+                       FontSize="42"
+                       FontFamily="{StaticResource BoldFont}"/>
+
+                <Label Text="$ mac"
+                       Opacity="1"
+                       TextColor="#6ae5ff"
+                       FontSize="36"
+                       FontFamily="{StaticResource NormalFont}"/>
+                
+                <Label Text="{Binding MacAdress}"
+                       TextColor="White"
+                       FontSize="42"
+                       FontFamily="{StaticResource BoldFont}"/>
+            </StackLayout>
+
+                    <lottie:AnimationView
+                        Animation="wifi_wiper.json"
+                        Loop="true"
+                        AutoPlay="true"
+                        Opacity="{Binding WiperOpacity}"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Center"
+                        HeightRequest="200"
+                        WidthRequest="200"
+                        Speed="1.5"/>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="80" Padding="0,0,0,0">
+                <Label Text="$ map" 
+                       TextColor="#6ae5ff"
+                       Opacity="0"
+                       FontSize="24"
+                       FontFamily="{StaticResource NormalFont}">
+                </Label>
+                <Label Text="$ donate" 
+                       TextColor="White"
+                       Opacity="0"
+                       FontSize="24"
+                       FontFamily="{StaticResource NormalFont}">
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="135">
+            <xfg:GradientStep StepColor="#000000" StepPercentage="0"/>
+            <xfg:GradientStep StepColor="#212121" StepPercentage="1"/>
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <!-- TODO: // Add Some Content -->
+</ContentPage>

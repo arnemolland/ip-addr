@@ -55,7 +55,7 @@ Secrets.cs
 
 # Auto generated files
 project.lock.json
-FindMyIP.*.nuget.*
+ipaddr.*.nuget.*
 
 # Manifests
 Info.plist
