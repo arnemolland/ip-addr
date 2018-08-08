@@ -29,12 +29,8 @@ After cloning this repository you will need to make sure that you have taken som
 
 ### Application Secrets
 
-Every application contains sensitive information that should never be checked into
-source control. In order to handle this the Mobile.BuildTools looks for a file in
-the project named `secrets.json`. If the file exists it will generate a new file
-`Helpers/Secrets.cs` with the values from your json file. Be sure to update this ReadMe
-with any Key values that get added over time so that other developers can add this
-for local builds.
+Every application contains sensitive information that should never be checked into source control. In order to handle this the Mobile.BuildTools looks for a file in the project named `secrets.json`. If the file exists it will generate a new file
+`Helpers/Secrets.cs` with the values from your json file. Be sure to update this ReadMe with any Key values that get added over time so that other developers can add this for local builds.
 
 ```json
 {
@@ -57,9 +53,7 @@ Because `secrets.json` does not exist within the checked in code and `Helpers/Se
 | Tizen | TizenSecret_ |
 | Default | Secret_ |
 
-If you need to inject secrets into multiple shared libraries that are part of the same 
-solution you can do this by adding an override value for `BuildHostSecretPrefix` in
-the PropertyGroup of your CSProj like:
+If you need to inject secrets into multiple shared libraries that are part of the same solution you can do this by adding an override value for `BuildHostSecretPrefix` in the PropertyGroup of your CSProj like:
 
 ```xml
 <Project>
