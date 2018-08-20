@@ -84,8 +84,8 @@ namespace ipaddr.ViewModels
                 else
                 {
                     await GetLocalIp();
-                    await GetPublicIp();
                     await GetMac();
+                    await GetPublicIp();
                     WiperOpacity = 0.0;
                     return;
                 }
@@ -130,6 +130,7 @@ namespace ipaddr.ViewModels
                 catch (Exception ex)
                 {
                     PublicIp = "not available.";
+                        System.Diagnostics.Debug.WriteLine(ex.ToString());
                 }
             }
         });

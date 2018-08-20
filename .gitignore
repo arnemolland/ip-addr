@@ -1,6 +1,9 @@
 # Autosave files
 *~
 
+# Artifacts
+Artifacts/
+
 # build
 [Oo]bj/
 [Bb]in/

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms" 
@@ -8,12 +8,12 @@
              xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
-             Title="{Binding Title}" 
+             Title="MainPage" 
              x:Class="ipaddr.Views.MainPage">
 
     <ScrollView Padding="0,40,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
         <StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0,0,150" x:Name="Title">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="20,0,0,150" x:Name="CommandTitle">
                 <Label Text="$" Margin="0,0,10,0" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
                 <Label Text="i" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
                 <Label Text="p" Margin="0,0,10,0" TextColor="White" FontFamily="{StaticResource NormalFont}" FontSize="36"/>
