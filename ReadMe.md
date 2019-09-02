@@ -16,7 +16,6 @@
 * Map based on IP location
 * 3D-touch support on iOS
 * Hold-to-copy
-* Webapp w/ open API
 
 
 
